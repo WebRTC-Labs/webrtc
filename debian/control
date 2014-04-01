@@ -1,0 +1,36 @@
+Source: webrtc
+Priority: extra
+Maintainer: Miguel Casas-Sanchez <mcasas@webrtc.org>
+Build-Depends: debhelper (>= 9),
+  cdbs,
+  autotools-dev,
+  libtool,
+  pkg-config,
+  libssl-dev,
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://www.webrtc.org
+
+Package: webrtc-dbg
+Section: debug
+Architecture: any
+Depends: mosami-gst-plugins-tsunami (= ${binary:Version})
+Description: WebRTC (debugging symbols)
+
+Package: webrtc-dev
+Section: libdevel
+Architecture: any
+Depends: mosami-gst-plugins-tsunami (= ${binary:Version})
+Description: WebRTC (development files)
+
+Package: webrtc
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: WebRTC (shared library)
+
+Package: webrtc-breakpad
+Section: debug
+Architecture: any
+Depends: google-breakpad-dev
+Description: WebRTC (breakpad)

@@ -1,0 +1,6 @@
+webrtc (0.1-1dev1) precise; urgency=low
+
+  * First packaging of webrtc
+
+ -- Miguel Casas-Sanchez <mcasas@webrtc.org>  Tue, 1 Apr 2014 17:00:20 +0200
+
